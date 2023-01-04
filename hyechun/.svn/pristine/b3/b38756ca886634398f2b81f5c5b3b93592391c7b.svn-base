@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko" xmlns:th="https://www.thymeleaf.org" xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="혜춘장학회 사이트에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/>
+<meta property="og:title" content="혜춘장학회">
+<meta property="og:url" content="https://www.hcsf.co.kr/">
+<meta property="og:image" content="https://www.hcsf.co.kr/img/info03.jpg">
+<title>혜춘장학회의 결산사항을 안내해 드립니다.</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/hyechun_favicon_ios.png">
+<link rel="shortcut icon" href="img/favicons/favicon_hc.ico">
+</head>
+<script>
+	function drawImage(){
+
+	    var sel = document.getElementById("color");
+	    
+	    for(var i=0; i<sel.length; i++) 
+	    {
+	        if(sel[i].selected == true) 
+	        {
+	            
+	            document.getElementById(sel[i].value).style.display="block";
+	        }
+	        else{
+	        	document.getElementById(sel[i].value).style.display="none";
+	        }
+	    }
+	}
+</script>
+
+<body onload="drawImage()">
+<div class="preloader">
+	<div class="three-bounce">
+		<div class="one">
+		</div>
+		<div class="two">
+		</div>
+		<div class="three">
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<header id="header" class="header header-absolute">
+	<a href="/"><div class="logo"></div></a>
+	<div class="container-fluid clearfix">
+		<button class="nav-toggle-btn a-nav-toggle">
+		<span class="nav-toggle">
+			<span class="stick stick-1"></span>
+			<span class="stick stick-2"></span>
+		</span>
+		</button>
+	</div>
+	<div class="hide-menu a-nav-toggle"></div>
+	<div class="menu">
+		<nav class="menu-main" id="accordion">
+			<p>MENU</p>
+			<ul id="menuMain">
+				<li><a href="/" >장학회 소개</a></li>
+				<li><a href="/history.do">재단연혁</a></li>
+				<li><a href="/board.do">재단소식</a></li>
+				<li class="active"><a href="/financial.do">결산공고</a></li>
+			</ul>
+		</nav>
+		<div class="menu-footer">
+			<ul class="mf_type mNone">
+				<li><p>소재지<br><span>서울특별시 중구 퇴계로 6길 3-30</span></p></li>
+				<li><p>전화번호 &middot; 팩스<br><span>02-6273-1313 &middot; 02-553-0839</span></p></li>
+			</ul>
+			<ul class="mf_type2">
+				<li><p>FAMILY SITE</p></li><br>
+				<li><a href="http://www.vegemil.co.kr/Main/" target="_blank"><img src="./img/ci_dcf.gif" onmouseover="javascript:this.src='./img/ci_dcf_on.gif'" onmouseout="javascript:this.src='./img/ci_dcf.gif'" alt="정식품" ></a></li>
+				
+				<li><a href="http://www.innp.co.kr/kr/Default.aspx" target="_blank"><img src="./img/ci_nnp.gif" onmouseover="javascript:this.src='./img/ci_nnp_on.gif'" onmouseout="javascript:this.src='./img/ci_nnp.gif'" alt="자연과사람들" ></a></li>
+
+				<li><a href="http://www.osse.co.kr/main/kr/default.aspx" target="_blank"><img src="./img/ci_osse.gif" onmouseover="javascript:this.src='./img/ci_osse_on.gif'" onmouseout="javascript:this.src='./img/ci_osse.gif'" alt="오쎄" ></a></li>
+			</ul>
+		</div>
+	</div>
+	</header>
+	<div id="content" class="content">
+		<div class="homepage-personal a-pagepiling">
+			<!-- sub Top -->
+			<div class="section bg_f h480 ">
+				<div class="bgGray"></div>
+				<div class="subTop">
+					<div class="subTitleBox">
+						<p class="subType01">결산공고</p>
+						<p class="subType02">혜춘장학회의 결산사항을 다운받을 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<!-- //sub Top -->
+			<!-- 결산공고 -->
+
+			<div class="section pp-scrollable">
+				<div class="slide-container">
+					<div class="container">
+						<div class="row infoRow" >
+							<div class="col-sm-12 col-12 ">
+
+								<!-- 셀렉트박스 -->
+								<div id="select_box" class="selBox">
+								  <label for="color">2019년 제 36기 결산공고</label>
+								  <select id="color" title="select color" onchange="drawImage()">
+									<option value="f2019" selected="selected">2019년 제 36기 결산공고</option>
+									<option value="f2018">2018년 제 35기 결산공고</option>
+									<option value="f2017">2017년 제 34기 결산공고</option>
+									<option value="f2016">2016년 제 33기 결산공고</option>
+								  </select>
+								</div>
+								<!-- //셀렉트박스  -->
+								
+							</div>
+							
+							<div class="col-md-12 mt50">
+								<!-- 2019년 제 35기 결산공고 -->
+								<div id="f2019" style="display:none">
+									<div class="downBox_y mt20">
+										<a href="./down/hc_2019.pdf" target="_blank" class="center"><div class="btn_down">2019년 제 36기 결산공고 PDF다운 <img src="./img/down.png" alt="결산공고 샘플공고"/></div></a>
+									</div>
+									<p class="img100"><img src="./down/hc_2019_01.jpg" alt="결산공고_재무상태표2019"/></p>
+									<p class="img100"><img src="./down/hc_2019_02.jpg" alt="결산공고_운영성과표2019"/></p>
+									<!-- //2019년 제 35기 결산공고 -->
+								</div>
+								
+								<!-- 2018년 제 34기 결산공고 -->
+								<div id="f2018" style="display:none">
+									<div class="downBox_y mt20">
+										<a href="./down/hc_2018.pdf" target="_blank" class="center"><div class="btn_down">2018년 제 35기 결산공고 PDF다운 <img src="./img/down.png" alt="결산공고 샘플공고"/></div></a>
+									</div>
+									<p class="img100"><img src="./down/hc_2018_01.jpg" alt="결산공고_재무상태표 2018"/></p>
+									<p class="img100"><img src="./down/hc_2018_02.jpg" alt="결산공고_운영성과표 2018"/></p>
+								</div>
+								<!-- //2018년 제 34기 결산공고 -->
+
+								<!-- 2017년 제 33기 결산공고 -->
+								<div id="f2017" style="display:none">
+									<div class="downBox_y mt20">
+										<a href="./down/hc_2017.pdf" target="_blank" class="center"><div class="btn_down">2017년 제 34기 결산공고 PDF다운 <img src="./img/down.png" alt="결산공고 샘플공고"/></div></a>
+									</div>
+									<p class="img100"><img src="./down/hc_2017_01.jpg" alt="결산공고_재무상태표 2017"/></p>
+									<p class="img100"><img src="./down/hc_2017_02.jpg" alt="결산공고_운영성과표 2017"/></p>
+								</div>
+								<!-- //2017년 제 33기 결산공고 -->
+
+								<!-- 2016년 제 32기 결산공고 -->
+								<div id="f2016" style="display:none">
+									<div class="downBox_y mt20">
+										<a href="./down/hc_2016.pdf" target="_blank" class="center"><div class="btn_down">2016년 제 33기 결산공고 PDF다운 <img src="./img/down.png" alt="결산공고 샘플공고"/></div></a>
+									</div>
+									<p class="img100"><img src="./down/hc_2016_01.jpg" alt="결산공고_재무상태표 2016"/></p>
+									<p class="img100"><img src="./down/hc_2016_02.jpg" alt="결산공고_운영성과표 2016"/></p>
+								</div>
+								<!-- 2016년 제 32기 결산공고 -->
+								
+							</div>
+						</div><!-- // row -->
+					</div>
+				</div>
+			</div>
+			<!-- //결산공고2020-09-11 -->
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="subFooter">
+			 &copy; Hyechun Scholarship Foundation. All Rights Reserved
+		</div>
+	</footer>
+</div>
+<script>
+/*<![CDATA[*/
+	if (document.location.protocol == 'http:') {
+
+	    document.location.href = document.location.href.replace('http:', 'https:');
+
+	}
+/*]]>*/
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script type="text/x-javascript">
+		(function(w, d, a){
+		    w.__beusablerumclient__ = {
+		        load : function(src){
+		            var b = d.createElement("script");
+		            b.src = src; b.async=true; b.type = "text/x-javascript";
+		            d.getElementsByTagName("head")[0].appendChild(b);
+		        }
+		    };w.__beusablerumclient__.load(a);
+		})(window, document, "//rum.beusable.net/script/b161207e112311u833/8b5ccd7c0a");
+</script>
+</body>
+</html>

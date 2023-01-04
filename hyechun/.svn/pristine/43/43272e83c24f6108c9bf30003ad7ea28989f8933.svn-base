@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head th:fragment="main-head">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="혜춘장학회는 정식품 창업주이신 故정재원명예회장이 우수한 인재가 면학에 전념할 수 있도록 설립한 장학재단 입니다.">
+		<meta name="author" content="">
+		<th:block layout:fragment="title"></th:block>
+		<link rel="stylesheet" th:href="@{/css/style2.css}" />
+		<link rel="stylesheet" th:href="@{/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css}" />
+		<th:block layout:fragment="add-css"></th:block>
+	</head>
+</html>

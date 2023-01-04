@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="혜춘장학회 사이트에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/>
+<meta property="og:title" content="혜춘장학회">
+<meta property="og:url" content="https://www.hcsf.co.kr/">
+<meta property="og:image" content="https://www.hcsf.co.kr/img/info03.jpg">
+<title>혜춘장학회의 소식을 전합니다.</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/hyechun_favicon_ios.png">
+<link rel="shortcut icon" href="img/favicons/favicon_hc.ico">
+</head>
+<body>
+<div class="preloader">
+	<div class="three-bounce">
+		<div class="one">
+		</div>
+		<div class="two">
+		</div>
+		<div class="three">
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<header id="header" class="header header-absolute">
+	<a href="/"><div class="logo"></div></a>
+	<div class="container-fluid clearfix">
+		<button class="nav-toggle-btn a-nav-toggle">
+		<span class="nav-toggle">
+			<span class="stick stick-1"></span>
+			<span class="stick stick-2"></span>
+		</span>
+		</button>
+	</div>
+	<div class="hide-menu a-nav-toggle"></div>
+	<div class="menu">
+		<nav class="menu-main" id="accordion">
+			<p>MENU</p>
+			<ul id="menuMain">
+				<li><a href="/" >장학회 소개</a></li>
+				<li><a href="/history.do">재단연혁</a></li>
+				<li class="active"><a href="/board.do">재단소식</a></li>
+				<li><a href="/financial.do">결산공고</a></li>
+			</ul>
+		</nav>
+		<div class="menu-footer">
+			<ul class="mf_type mNone">
+				<li><p>소재지<br><span>서울특별시 중구 퇴계로 6길 3-30</span></p></li>
+				<li><p>전화번호 &middot; 팩스<br><span>02-6273-1313 &middot; 02-553-0839</span></p></li>
+			</ul>
+			<ul class="mf_type2">
+				<li><p>FAMILY SITE</p></li><br>
+				<li><a href="http://www.vegemil.co.kr/Main/" target="_blank"><img src="./img/ci_dcf.gif" onmouseover="javascript:this.src='./img/ci_dcf_on.gif'" onmouseout="javascript:this.src='./img/ci_dcf.gif'" alt="정식품" ></a></li>
+				
+				<li><a href="http://www.innp.co.kr/kr/Default.aspx" target="_blank"><img src="./img/ci_nnp.gif" onmouseover="javascript:this.src='./img/ci_nnp_on.gif'" onmouseout="javascript:this.src='./img/ci_nnp.gif'" alt="자연과사람들" ></a></li>
+
+				<li><a href="http://www.osse.co.kr/main/kr/default.aspx" target="_blank"><img src="./img/ci_osse.gif" onmouseover="javascript:this.src='./img/ci_osse_on.gif'" onmouseout="javascript:this.src='./img/ci_osse.gif'" alt="오쎄" ></a></li>
+			</ul>
+		</div>
+	</div>
+	</header>
+	<div id="content" class="content">
+		<div class="homepage-personal a-pagepiling">
+			<!-- sub Top -->
+			<div class="section bg_b h480 ">
+				<div class="bgGray"></div>
+				<div class="subTop">
+					<div class="subTitleBox">
+						<p class="subType01">재단소식</p>
+						<p class="subType02">혜춘장학회 주요소식</p>
+					</div>
+				</div>
+			</div>
+			<!-- //sub Top -->
+			<!-- 활동소식 -->
+			<div class="section pp-scrollable">
+				<div class="slide-container">
+					<div class="container">
+						<div class="row" >
+							<div class="col-md-12">
+								<!-- board -->
+								<table class="board" cellspacing="0" border="0" summary="결산공고게시판">
+									<caption>혜춘장학회 결산공고 게시판입니다.</caption>
+									<colgroup>
+										<col width="80%">
+										<col width="20%">
+									</colgroup>
+									<tr th:if="${not #lists.isEmpty( boardList )}" th:each="row : ${boardList}">
+										<td th:if="${row.secretYn.equals('N')}">
+											<a th:href="${row.content}" target="_blank" th:text="${row.title}"></a>
+										</td>
+										<td th:if="${row.secretYn.equals('N')}" th:text="${row.insertTime}"></td>
+									</tr>
+									<tr th:unless="${not #lists.isEmpty( boardList )}">
+										<td colspan="5">조회된 결과가 없습니다.</td>
+									</tr>
+								</table>
+								<!-- //board -->
+							</div>
+
+							<!-- paging -->
+							<th:block layout:fragment="paging">
+								<nav th:replace="board/fragments/common :: pagination"></nav>
+							</th:block>
+							<!-- paging //-->
+						</div><!-- // row -->
+					</div>
+				</div>
+			</div>
+			<!-- //활동소식 -->
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="subFooter">
+			 &copy; Hyechun Scholarship Foundation. All Rights Reserved
+		</div>
+	</footer>
+</div>
+<script>
+/*<![CDATA[*/
+	if (document.location.protocol == 'http:') {
+		
+		if(document.location.host != 'localhost:8046') {
+	    	document.location.href = document.location.href.replace('http:', 'https:');
+		}
+
+	}
+/*]]>*/
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<th:block layout:fragment="script">
+		<script th:inline="javascript">
+			/*<![CDATA[*/
+
+			function movePage(uri, queryString) {
+				location.href = uri + queryString;
+			}
+
+			function searchBoard(form) {
+				/*[- 드롭다운이 아닌 메인 검색 키워드로 검색했을 때 -]*/
+				if (isEmpty(form) == true) {
+					var searchKeyword = document.getElementById("mainSearchKeyword");
+					if (isEmpty(searchKeyword.value) == true) {
+						alert("키워드를 입력해 주세요.");
+						searchKeyword.focus();
+						return false;
+					}
+
+					form = document.getElementById("searchForm");
+					form.searchKeyword.value = searchKeyword.value;
+					form.submit();
+				}
+
+				if (isEmpty(form.searchKeyword.value) == true) {
+					alert("키워드를 입력해 주세요.");
+					form.searchKeyword.focus();
+					return false;
+				}
+			}
+			/*[- end of function -]*/
+
+			/*]]>*/
+		</script>
+		<script type="text/x-javascript">
+			(function(w, d, a){
+			    w.__beusablerumclient__ = {
+			        load : function(src){
+			            var b = d.createElement("script");
+			            b.src = src; b.async=true; b.type = "text/x-javascript";
+			            d.getElementsByTagName("head")[0].appendChild(b);
+			        }
+			    };w.__beusablerumclient__.load(a);
+			})(window, document, "//rum.beusable.net/script/b161207e112311u833/8b5ccd7c0a");
+		</script>
+	</th:block>
+</body>
+</html>
