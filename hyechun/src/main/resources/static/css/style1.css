@@ -6,6 +6,7 @@
 	padding:0;
 	width:100%;
 	height:100vh;
+	overflow-y:hidden
 }
 .image-slide {
 	height:100vh;
@@ -27,11 +28,12 @@
 	position:absolute;
 	width:100%;
 	top:30%;
+	overflow:hidden
 }
 .text-slider {
 	margin:0%;
 	padding:0%;
-	height:100vh;
+	 height:48vh; 
 }
 .text-slide h1 {
 	color:#fff;
