@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,18 @@
 <meta property="og:title" content="혜춘장학회">
 <meta property="og:url" content="https://www.hcsf.co.kr/">
 <meta property="og:image" content="https://www.hcsf.co.kr/img/info03.jpg">
-<title>혜춘장학회의 연혁을 소개합니다.</title>
+
+<title>혜춘장학회</title>
+<!-- CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Main CSS -->
 <link href="css/style.css" rel="stylesheet">
+<!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/hyechun_favicon_ios.png">
+<!--
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+-->
 <link rel="shortcut icon" href="img/favicons/favicon_hc.ico">
 </head>
 <body>
@@ -27,7 +35,7 @@
 </div>
 <div class="wrapper">
 	<header id="header" class="header header-absolute">
-	<a href="/"><div class="logo"></div></a>
+	<a href="index.html"><div class="logo"></div></a>
 	<div class="container-fluid clearfix">
 		<button class="nav-toggle-btn a-nav-toggle">
 		<span class="nav-toggle">
@@ -41,20 +49,20 @@
 		<nav class="menu-main" id="accordion">
 			<p>MENU</p>
 			<ul id="menuMain">
-				<li><a href="/" >장학회 소개</a></li>
-				<li class="active"><a  href="/history.do">재단연혁</a></li>
-				<li><a href="/board.do">재단소식</a></li>
-				<li><a href="/financial.do">결산공고</a></li>
+				<li><a href="index.html" >장학회 소개</a></li>
+				<li class="active"><a  href="sub_history.html">재단연혁</a></li>
+				<li><a href="sub_board.html">재단소식</a></li>
+				<li><a href="sub_financial.html">결산공고</a></li>
 			</ul>
 		</nav>
 		<div class="menu-footer">
 			<ul class="mf_type mNone">
-				<li><p>소재지<br><span>서울특별시 중구 퇴계로 6길 3-30</span></p></li>
+				<li><p>소재지<br><span>서울특별시 중구 퇴계로 6길 3-20</span></p></li>
 				<li><p>전화번호 &middot; 팩스<br><span>02-6273-1313 &middot; 02-553-0839</span></p></li>
 			</ul>
 			<ul class="mf_type2">
 				<li><p>FAMILY SITE</p></li><br>
-				<li><a href="https://www.vegemil.co.kr/" target="_blank"><img src="./img/ci_dcf.gif" onmouseover="javascript:this.src='./img/ci_dcf_on.gif'" onmouseout="javascript:this.src='./img/ci_dcf.gif'" alt="정식품" ></a></li>
+				<li><a href="http://www.vegemil.co.kr/Main/" target="_blank"><img src="./img/ci_dcf.gif" onmouseover="javascript:this.src='./img/ci_dcf_on.gif'" onmouseout="javascript:this.src='./img/ci_dcf.gif'" alt="정식품" ></a></li>
 				
 				<li><a href="http://www.innp.co.kr/kr/Default.aspx" target="_blank"><img src="./img/ci_nnp.gif" onmouseover="javascript:this.src='./img/ci_nnp_on.gif'" onmouseout="javascript:this.src='./img/ci_nnp.gif'" alt="자연과사람들" ></a></li>
 
@@ -71,7 +79,7 @@
 				<div class="subTop">
 					<div class="subTitleBox">
 						<p class="subType01">연혁</p>
-						<p class="subType02">혜춘장학회의 연혁을 소개합니다.</p>
+						<p class="subType02">(재)혜춘장학회의 연혁을 소개합니다.</p>
 					</div>
 				</div>
 			</div>
@@ -86,6 +94,30 @@
 								<div class="his_box">
 									<div class="center"><div class="blue_r01"><p class="blue_r02">2020년대</p></div></div>
 									<ul class="history_base blue mt120">
+										<li>2023년</li>
+										<li>
+											<dl>
+												<dd>제39기 혜춘장학회 장학금 수여 (장학생: 45명, 장학금: 1억 5,900만원 전달)</dd>
+											</dl>
+										</li>
+									</ul>
+									<ul class="history_base blue ">
+										<li>2022년</li>
+										<li>
+											<dl>
+												<dd>제38기 혜춘장학회 장학금 수여 (장학생: 39명, 장학금: 1억 3,700만원 전달)</dd>
+											</dl>
+										</li>
+									</ul>
+									<ul class="history_base blue ">
+										<li>2021년</li>
+										<li>
+											<dl>
+												<dd>제37기 혜춘장학회 장학금 수여 (장학생: 35명, 장학금: 1억 1,300만원 전달)</dd>
+											</dl>
+										</li>
+									</ul>
+									<ul class="history_base blue ">
 										<li>2020년</li>
 										<li>
 											<dl>
@@ -95,6 +127,7 @@
 										</li>
 									</ul>
 								</div>
+								<!-- //2020 -->
 								<!-- 2010 -->	
 								<div class="his_box">
 									<div class="center"><div class="blue_r01"><p class="blue_r02">2010년대</p></div></div>
@@ -327,29 +360,8 @@
 		</div>
 	</footer>
 </div>
-<script>
-/*<![CDATA[*/
-	if (document.location.protocol == 'http:') {
-		
-		if(document.location.host == 'hcsf.co.kr') {
-	    	document.location.href = document.location.href.replace('http:', 'https:');
-		}
 
-	}
-/*]]>*/
-</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
-<script type="text/x-javascript">
-		(function(w, d, a){
-		    w.__beusablerumclient__ = {
-		        load : function(src){
-		            var b = d.createElement("script");
-		            b.src = src; b.async=true; b.type = "text/x-javascript";
-		            d.getElementsByTagName("head")[0].appendChild(b);
-		        }
-		    };w.__beusablerumclient__.load(a);
-		})(window, document, "//rum.beusable.net/script/b161207e112311u833/8b5ccd7c0a");
-</script>
 </body>
 </html>
